@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLCC - Nara Lab on Computational Cognition</title>
+    <meta name="description"
+        content="Nara Lab on Computational Cognition (NLCC) explores the intersection of computation and human cognition.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="neuronCanvas"></canvas>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="active" class="logo">
+                <img src="images/logo.jpg" alt="NLCC Logo" class="logo-img">
+                <img src="images/iitlogo.png" alt="IIT Mandi Logo" class="logo-img">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="about_pi.html">About PI</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="workshops.html" class="blink">Public Outreach</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content animate-fade-in">
+                <h1>Nara Lab on<br>Computational Cognition</h1>
+                <p>School of Biosciences and Bioengineering, IIT MANDI</p>
+                <div class="hero-buttons">
+                    <a href="team.html" class="btn btn-primary">Meet Our Team</a>
+                    <a href="contact.html" class="btn btn-outline">Collaborate With Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" id="about">
+            <h2 class="section-title">Our Research Focus</h2>
+            <p class="section-subtitle"> We bridge the gap between biology and computation by blending cognitive
+                neuroscience,
+                biomedical engineering, neurolinguistics and machine learning.
+                Advancing both the fundamental understanding of the mind ad practical innovations in
+                health technology .
+            </p>
+
+            <!--<div class="grid">
+                <div class="card animate-fade-in delay-1">
+                    <h3>Cognitive Modeling</h3>
+                    <p>Building mathematical and algorithmic models that accurately simulate diverse human cognitive
+                        processes spanning from memory to complex decision making.</p>
+                </div>
+                <div class="card animate-fade-in delay-2">
+                    <h3>Machine Learning</h3>
+                    <p>Leveraging biologically-inspired neural networks and reinforcement learning to develop more
+                        robust, interpretable, and adaptable artificial intelligence.</p>
+                </div>
+                <div class="card animate-fade-in delay-1">
+                    <h3>Human-AI Interaction</h3>
+                    <p>Investigating how artificial cognitive architectures can be designed to better align with human
+                        reasoning patterns for seamless collaboration.</p>
+                </div>
+            </div>-->
+        </section>
+
+        <section class="container" id="workshops"
+            style="background-color: var(--bg-secondary); border-radius: var(--radius); padding: 4rem 2rem; margin-bottom: 2rem;">
+            <h2 class="section-title">Upcoming Workshops</h2>
+            <p class="section-subtitle">Join us for deep-dives into cognitive modeling and AI-driven healthcare
+                solutions.</p>
+            <div class="grid" style="grid-template-columns: 1fr; gap: 2rem;">
+                <div class="card animate-fade-in delay-1"
+                    style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; border-color: var(--accent);">
+                    <div>
+                        <h3 style="color: var(--text-primary); font-size: 1.5rem; margin-bottom: 0.5rem;">Hands-on
+                            Workshop on Tools and Methods for Functional Neuroimaging</h3>
+                        <p
+                            style="font-weight: 500; font-size: 1rem; color: var(--text-primary); margin-bottom: 0.5rem;">
+                            Date: June 25-27,2026 | Location: IIT Mandi</p>
+                        <p style="color: var(--text-secondary);">A hands-on workshop on tools and methods for functional
+                            neuroimaging will be held at IIT Mandi using EEG and fNIRS(Electroencephalography &
+                            functional
+                            Near- Infrared Spectroscopy).</p>
+                    </div>
+                    <div>
+                        <a href="workshops.html" class="btn btn-primary"
+                            style="margin-bottom: 0.5rem; display: inline-block;">View</a>
+                        <br>
+                        <!--<a href="workshops.html" class="btn btn-outline" style="margin-left: 0;">Register Now</a>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Nara Lab on Computational Cognition</div>
+            <p>&copy; 2026 NLCC. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="neurons.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+            if (mobileMenu) {
+                mobileMenu.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
