@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://nlcciitm.github.io/Website/</loc>
+    </url>
+
+    <url>
+        <loc>https://nlcciitm.github.io/Website/about.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nlcciitm.github.io/Website/about_pi.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nlcciitm.github.io/Website/team.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nlcciitm.github.io/Website/publications.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nlcciitm.github.io/Website/workshops.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nlcciitm.github.io/Website/opportunities.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nlcciitm.github.io/Website/news.html</loc>
+    </url>
+
+    <url>
+        <loc>https://nlcciitm.github.io/Website/contact.html</loc>
+    </url>
+
+</urlset>
