@@ -1,0 +1,6 @@
+# robots.txt for NLCC Website
+
+User-agent: *
+Allow: /
+
+Sitemap: https://nlcciitm.github.io/Website/sitemap.xml
