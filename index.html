@@ -55,12 +55,12 @@
 
     <meta
       property="og:image"
-      content="https://nlcciitm.github.io/Website/images/nlcc_front.png"
+      content="https://nlcciitm.github.io/Website/images/nlcc_front_view.png"
     />
 
     <meta
       property="og:image:secure_url"
-      content="https://nlcciitm.github.io/Website/images/nlcc_front.png"
+      content="https://nlcciitm.github.io/Website/images/nlcc_front_view.png"
     />
 
     <meta property="og:image:type" content="image/png" />
@@ -88,7 +88,7 @@
 
     <meta
       name="twitter:image"
-      content="https://nlcciitm.github.io/Website/images/nlcc_front.png"
+      content="https://nlcciitm.github.io/Website/images/nlcc_front_view.png"
     />
 
     <meta
@@ -103,8 +103,8 @@
         "name": "Nara Lab on Computational Cognition",
         "alternateName": "NLCC",
         "url": "https://nlcciitm.github.io/Website/",
-        "logo": "https://nlcciitm.github.io/Website/images/nlcc_front.png",
-        "image": "https://nlcciitm.github.io/Website/images/nlcc_front.png",
+        "logo": "https://nlcciitm.github.io/Website/images/nlcc_front_view.png",
+        "image": "https://nlcciitm.github.io/Website/images/nlcc_front_view.png",
         "description": "Research laboratory at IIT Mandi focusing on computational neuroscience, cognitive science, artificial intelligence, machine learning, neuroimaging, and brain inspired computing.",
         "parentOrganization": {
           "@type": "CollegeOrUniversity",
@@ -120,7 +120,8 @@
     <canvas id="neuronCanvas"></canvas>
     <nav>
       <div class="nav-container">
-        <a href="index.html" class="active" class="logo">
+        <!-- <a href="index.html" class="active" class="logo"> -->
+        <a href="index.html" class="logo active">
           <img src="images/logo.jpg" alt="NLCC Logo" class="logo-img" />
           <img src="images/iitlogo.png" alt="IIT Mandi Logo" class="logo-img" />
         </a>
@@ -130,7 +131,9 @@
           <span class="bar"></span>
         </div>
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
+          <!-- <li><a href="index.html" class="active">Home</a></li> -->
+          <li><a href="./" class="active">Home</a></li>
+          <!--So that the url shows the website link only  -->
           <li><a href="about.html">About us</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="team.html">Team</a></li>
@@ -255,10 +258,18 @@
       </section>
     </main>
 
-    <footer>
+    <!-- <footer>
       <div class="footer-content">
         <div class="footer-logo">Nara Lab on Computational Cognition</div>
         <p>&copy; 2026 NLCC. All rights reserved.</p>
+      </div>
+    </footer> -->
+    <footer>
+      <div class="footer-content">
+        <p>
+          <strong>Nara Lab on Computational Cognition</strong> | © 2026 IIT
+          Mandi. All rights reserved.
+        </p>
       </div>
     </footer>
     <script src="neurons.js"></script>
